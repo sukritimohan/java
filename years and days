@@ -1,0 +1,17 @@
+package next;
+import java.util.*;
+public class Double {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    int years,b,days;
+	Scanner sc=new Scanner(System.in);
+    System.out.println("Input the number of minutes:");
+    int a=sc.nextInt();
+    b=a/1440;
+    years=b/365;
+    days=(b%365);
+    System.out.println("Years="+years);
+    System.out.println("Days="+days);
+	}
+}
