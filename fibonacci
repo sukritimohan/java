@@ -1,0 +1,27 @@
+package start;
+import java.util.*;
+public class Fibonacci {
+	int fib(int a1,int b1)
+	{
+		int s=a1+b1;
+		return(s);
+	}
+	
+
+	public static void main(String[] args) {
+		int a=0,b=1,n=0;
+		int c=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of digits in series: ");
+		int num=sc.nextInt();
+		System.out.print(a+",");
+		System.out.print(b+",");
+		Fibonacci ob=new Fibonacci();
+		while(n<(num-2))
+		{
+		c=ob.fib(a,b);
+		System.out.print(c+",");
+		a=b;
+		b=c;
+		n++;
+		}
